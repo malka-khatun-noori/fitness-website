@@ -1,0 +1,198 @@
+body {
+    color: black;
+    margin: 0px;
+    padding: 0px;
+    background: url("../img/gym.png");
+    background-position: center;
+    background-clip: content-box;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+#menu {
+    display: none;
+    cursor: pointer;
+}
+.material-symbols-outlined {
+    display: none;
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+    margin: 40px;
+}
+.left {
+    display: inline;
+    margin-top: 10px;
+}
+.left img {
+    border-radius: 50%;
+    width: 50px;
+    margin-left: 30px;
+}
+.left div {
+    line-height: 19px;
+    font-size: 26px;
+    text-align: center;
+}
+.mid {
+    display: flex;
+    justify-content: center;
+    flex: 1 1 0%;
+}
+.right {
+    display: inline-block;
+}
+.mobile-right {
+    display: none;
+}
+.active {
+    display: none;
+}
+.sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+    display: none;
+    overflow-y: auto;
+    padding-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 5px;
+}
+.sidebar ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+.sidebar li {
+    margin-top: 20px;
+    width: 500px;
+    margin-bottom: 10px;
+}
+.sidebar a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s ease 0s;
+}
+.sidebar a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+.navbar {
+    display: inline-block;
+}
+.navbar li {
+    display: inline-block;
+    font-size: 25px;
+}
+.navbar li a {
+    color: black;
+    text-decoration: none;
+    padding: 34px 23px;
+}
+.navbar li a:hover .navbar li a.active {
+    text-decoration: underline;
+    color: grey;
+}
+.btn {
+    margin: 0px 9px;
+    background-color: white;
+    color: black;
+    padding: 4px 14px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: rgb(107, 104, 104);
+}
+.container {
+    border: 2px solid black;
+    margin:10% 10%;
+    padding: 50px;
+    width: 35%;
+    border-radius: 28px;
+    position: fixed;
+    z-index: -1;
+}
+.Form-group input {
+    text-align: center;
+    width: 95%;
+    padding: 1px;
+    border: 2px solid black;
+    margin: 11px auto;
+    font-size: 25px;
+    border-radius: 8px;
+    display: flex;
+}
+
+  .Form-group input::placeholder {
+        font-size: 20px;
+   }
+.container h1 {
+    text-align: center;
+}
+.container button {
+    display: block;
+    width: 74%;
+    margin: 20px auto;
+}
+@media screen and (max-width: 1170px) {
+    .pc-right {
+        display: none;
+   }
+    .mobile-right {
+        display: flex;
+   }
+
+ 
+    .Form-group input::placeholder {
+        font-size: 20px;
+   }
+}
+@media screen and (max-width: 1086px) {
+    #menu {
+        display: flex;
+   }
+    .mid {
+        display: none;
+   }
+    .active {
+        display: inline-block;
+   }
+   .container{
+    margin: 120px 5%;
+    width: 70%;
+ }
+}
+@media screen and (max-width: 600px) {
+    .Form-group input::placeholder {
+        font-size: 15px;
+   }
+}
+@media screen and (max-width: 500px) {
+    p{
+        font-size:12px;
+        width:max-content;
+   }
+}
+@media screen and (max-width: 450px) {
+    .Form-group input::placeholder {
+        font-size: 12px;
+   }
+}
